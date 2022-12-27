@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins,sans-serif;
+    font-size: 14px;
+    background-color: #232325;
+    color:#ffdf2b;
+}
+.ButtonQHarr {
+  
+    cursor: pointer;
+    transition: all .2s ease-in;
+    box-shadow: 1px 1px 2px #ffdf2b,-1px -1px 2px #ffdf2b;
+}
+
+input {
+    color: #ffdf2b;
+}
+
+.DiscoverItem {
+    padding: 0.5rem 1rem;
+    transition: all .3s ease-in;
+   
+}
+.transitionAll{
+    transition: all .3s ease-in;
+
+}
+.transitionAll:hover{
+    box-shadow: 1px 1px 2px #ffdf2b,-1px -1px 2px #ffdf2b;
+
+}
+.boxShadow{
+    box-shadow: 1px 1px 2px #ffdf2b,-1px -1px 2px #ffdf2b;
+}
+
+.boxShadow2{
+    box-shadow:  1px 1px 2px #ffdf2b,-1px -1px 2px #ffdf2b
+}
+
+
+  
