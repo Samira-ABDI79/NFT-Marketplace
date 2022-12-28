@@ -30,7 +30,7 @@ function HelloNFT(){
 
         <div className="lg:w-[40%] lg:absolute lg:z-[100] w-full">
         <div className="rounded-2xl border-icons border p-6 bg-shadowLight">
-          <h3 className="text-5xl font-bold">Hello NFT</h3>
+          <h3 className="text-5xl font-bold text0">Hello NFT</h3>
        
 
        <div  className="flex justify-between items-center mt-10">

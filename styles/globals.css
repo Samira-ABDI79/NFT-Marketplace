@@ -69,5 +69,12 @@ input {
 .z900:hover{
     border: 1px solid #ffdf2b;
 }
+.text1{
+line-height: 1;
+
+}
+.text0{
+    line-height: 0;
+}
 
   

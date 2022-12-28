@@ -18,7 +18,7 @@ function MissDrop (){
       
         <div className="flex justify-between lg:flex-row flex-col">
             <div className="lg:w-[40%] w-full">
-                <h1 className="text-[5rem] font-bold">Never miss a drop</h1>
+                <h1 className="text-5xl font-bold text0">Never miss a drop</h1>
                 <p className="font-bold my-10 text-xl">Subcribe to our super-exclusive drop list and be the first to know abour upcoming drops</p>
                 <div className="flex justify-between lg:w-[70%] w-[80%] flex-col">
                 {data.map(({ id,text}, index) => (

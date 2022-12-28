@@ -78,7 +78,7 @@ function TopListCreators (){
     return (
         <>
         <section className="container" >
-            <h1 className="text-center text-[4rem] font-bold">Top List Creators</h1>
+            <h1 className="text-center text-5xl font-bold text0">Top List Creators</h1>
             <div className="flex justify-center items-center">
                 <div className="w-[50%] lg:border border-none border-icons rounded-full px-12 py-5 flex justify-between lg:flex-row flex-col mt-12">
                 <button className="ButtonQHarr lg:mt-0 mt-5 text-xl flex justify-between items-center rounded-full shadow-icons border-icons px-8 py-4 border   hover:bg-shadowLight bg-icons text-shadowLight hover:text-icons ">

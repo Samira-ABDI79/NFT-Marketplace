@@ -110,7 +110,7 @@ function AudioCollection (){
     return(
         <>
         <section className="container my-12">
-            <h1 className="text-4xl font-bold">Audio Collection</h1>
+            <h1 className="text-5xl font-bold text0">Audio Collection</h1>
             <p className="text-xl mb-12 mt-8">Discover the most outstanding NFTs in all topics of life.</p>
 
 <article className="flex justify-between lg:flex-row flex-col">

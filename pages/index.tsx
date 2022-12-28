@@ -15,7 +15,7 @@ function Home(){
 <section className="container my-20">
         <div className="flex justify-between lg:flex-row flex-col">
             <div className="lg:w-[40%] w-full">
-                <h1 className="text-[5rem] font-bold">Discover, collect, and sell NFTs  🖼️</h1>
+                <h1 className="text-[5rem] font-bold text1">Discover, collect, and sell NFTs  🖼️</h1>
                 <p className="font-bold my-10 text-xl">Discover the most outstanding NTFs in all topics of life. Creative your NTFs and sell them</p>
                 <div className="flex justify-between lg:w-[50%] w-[70%]">
                     <Button title="Start your search" type="yellow" />
