@@ -167,7 +167,7 @@ function AudioCollection (){
             {AudioList2.map(({price,musicId,images}, index) => (
        <div className=" flex justify-between items-center rounded-2xl  z900  transitionAll p-6    w-full lg:mt-0 mt-12 bg-shadowDark" key={index}>
       
-   <img src="/assets/creatorbackground-10.jpg" alt="NFT" className="w-16 h-16 rounded-xl " />
+   <img src="/assets/creatorbackground-1.jpeg" alt="NFT" className="w-16 h-16 rounded-xl " />
 
   
    

@@ -4,6 +4,8 @@ import { services } from "../services/data/services";
 import HelloNFT from "../components/HelloNFT";
 import AudioCollection from "../components/AudioCollection";
 import MissDrop from "../components/MissDrop";
+import ExploreVideo from "../components/ExploreVideo";
+
 function Home(){
   return(
     <>
@@ -43,6 +45,7 @@ function Home(){
         {/* Hello NFT */}
       <HelloNFT />
       <AudioCollection />
+      <ExploreVideo />
       <MissDrop />
 
 

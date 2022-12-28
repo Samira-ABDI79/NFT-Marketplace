@@ -1,0 +1,50 @@
+.mySlider{
+  height: 80%;
+  width: 90%;
+  padding-top: 10rem;
+ 
+}
+.mySlider .swiper-pagination-bullet {
+    background-color: #ffdf2b;
+ 
+}
+
+.mySlider .swiper-button-next {
+  position: absolute;
+ margin-top: -25%;
+color:#ffdf2b;
+background-color: inherit;
+border: 1px solid #ffdf2b;
+border-radius: 50%;
+padding: 2px;
+width: 5rem;
+height: 5rem;
+
+}
+
+.mySlider .swiper-button-prev {
+  color:#ffdf2b;
+  background-color: inherit;
+  position: absolute;
+  margin-top: -25%;
+  /* left: 80rem; */
+  left: 85%;
+  padding: 2px;
+  border: 1px solid #ffdf2b;
+border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.mySlider .swiper-pagination-bullet-active {
+    background-color: #555557 !important;
+  }
+  .mySlider  .swiper-wrapper {
+   height: 500px;
+ 
+    
+  }
+  @media screen and (max-width: 800px) {
+    
+   
+  }
