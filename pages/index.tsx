@@ -5,6 +5,7 @@ import HelloNFT from "../components/HelloNFT";
 import AudioCollection from "../components/AudioCollection";
 import MissDrop from "../components/MissDrop";
 import ExploreVideo from "../components/ExploreVideo";
+import TopListCreators from "../components/TopListCreators";
 
 function Home(){
   return(
@@ -46,6 +47,7 @@ function Home(){
       <HelloNFT />
       <AudioCollection />
       <ExploreVideo />
+      <TopListCreators />
       <MissDrop />
 
 
