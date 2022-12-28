@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import { services } from "../services/data/services";
 import HelloNFT from "../components/HelloNFT";
 import AudioCollection from "../components/AudioCollection";
+import MissDrop from "../components/MissDrop";
 function Home(){
   return(
     <>
@@ -42,6 +43,7 @@ function Home(){
         {/* Hello NFT */}
       <HelloNFT />
       <AudioCollection />
+      <MissDrop />
 
 
     <EarnFree />
