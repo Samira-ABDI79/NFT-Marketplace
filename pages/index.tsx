@@ -6,6 +6,7 @@ import AudioCollection from "../components/AudioCollection";
 import MissDrop from "../components/MissDrop";
 import ExploreVideo from "../components/ExploreVideo";
 import TopListCreators from "../components/TopListCreators";
+import BrowseCategory from "../components/BrowseCategory";
 
 function Home(){
   return(
@@ -48,6 +49,7 @@ function Home(){
       <AudioCollection />
       <ExploreVideo />
       <TopListCreators />
+      <BrowseCategory />
       <MissDrop />
 
 

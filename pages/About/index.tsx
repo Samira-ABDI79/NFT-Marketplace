@@ -1,6 +1,8 @@
+import EarnFree from "../../components/EarnFree";
 function About (){
     return(
         <>
+        <EarnFree />
         </>
     )
 }
