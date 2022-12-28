@@ -45,4 +45,29 @@ input {
 }
 
 
+.AudioCardboxtime {
+   
+    padding: 0.48rem 4.5rem;
+    margin-right: -1.4rem;
+    transform: skewX(35deg);
+    border-bottom-left-radius: 1rem;
+}
+.boxtime_remaing {
+    transform: skewX(-35deg);
+    text-align: center;
+}
+
+.boxtime_remaing h5 {
+    font-size: 1.5rem;
+   
+}
+
+.z900{
+    z-index: 99999999;
+
+}
+.z900:hover{
+    border: 1px solid #ffdf2b;
+}
+
   
