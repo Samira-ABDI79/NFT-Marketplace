@@ -7,6 +7,7 @@ import MissDrop from "../components/MissDrop";
 import ExploreVideo from "../components/ExploreVideo";
 import TopListCreators from "../components/TopListCreators";
 import BrowseCategory from "../components/BrowseCategory";
+import TheVideos from "../components/TheVideos";
 
 function Home(){
   return(
@@ -54,6 +55,7 @@ function Home(){
 
 
     <EarnFree />
+    <TheVideos />
     </>
   )
 }
