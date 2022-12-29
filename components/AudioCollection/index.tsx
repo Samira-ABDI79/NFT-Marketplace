@@ -125,7 +125,7 @@ function AudioCollection (){
        </div>
    <img src="/assets/creatorbackground-10.jpg" alt="NFT" className="absolute  -z-[10] rounded-t-2xl w-[22rem] h-[27rem]" />
 
-   <div id="videoIcon" className=" absolute lg:mt-[12%] lg:ml-[18%] mt-[44%] ml-[50%] w-16 h-16 bg-icons p-4 rounded-[50%] flex items-center justify-center">
+   <div id="videoIcon" className=" absolute lg:mt-[12%] lg:ml-[18%] mt-[44%] ml-[50%] md:mt-[34%] md:ml-[30%]  w-16 h-16 bg-icons p-4 rounded-[50%] flex items-center justify-center">
    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" className="text-shadowLight w-6 h-6" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><desc></desc><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 4v16l13 -8z"></path></svg>
    </div>
    <div className="absolute lg:ml-2 lg:mt-1 mt-2 ml-2 flex text-[18px] bg-icons text-shadowDark lg:w-20 w-16 rounded-full items-center justify-center py-2">
@@ -134,7 +134,7 @@ function AudioCollection (){
    <span className="ml-2">24</span>
    </div>
    {/* ///////////////// */}
-   <div className="bg-shadowLight w-[90%] pt-10 px-8 rounded-tr-3xl lg:mt-[80%] mt-[77%] z-50">
+   <div className="bg-shadowLight w-[90%] pt-10 px-8 rounded-tr-3xl lg:mt-[80%] mt-[77%] md:mt-[40%] z-50">
          <div className="flex justify-between">
          <div className="flex font-bold text-xl">
               <h1 >NFT music</h1>

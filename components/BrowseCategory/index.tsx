@@ -79,7 +79,7 @@ function BrowseCategory(){
             {CategoryList.map(({image,topic,count,}, index) => (
                 <div key="index" className="lg:w-[16%] w-full rounded-2xl  z900  transitionAll p-6 mt-12">
                     <img src={image} alt="img1" className="rounded-2xl lg:h-[7rem] h-[12rem] w-full"/>
-                    <div className="flex justify-between items-center mt-6">
+                    <div className="flex lg:justify-between justify-center items-center mt-6">
                         <div className="w-12 h-12 bg-icons rounded-[50%] "></div>
                         <div className="flex flex-col justify-between">
                             <p className="font-bold">{topic}</p>
