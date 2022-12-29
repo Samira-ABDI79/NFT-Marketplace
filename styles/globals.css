@@ -64,9 +64,11 @@ input {
 
 .z900{
     z-index: 99999999;
+    transition: all .3s ease-in;
+
 
 }
-.z900:hover{
+.z900:hover , .z900:active{
     border: 1px solid #ffdf2b;
 }
 .text1{
