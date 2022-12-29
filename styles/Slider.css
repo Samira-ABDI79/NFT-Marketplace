@@ -44,10 +44,11 @@ border-radius: 50%;
  
     
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1024px) {
     .mySlider .swiper-button-prev{
       display:none;
     }
     .mySlider .swiper-button-next {display: none;}
    
   }
+
