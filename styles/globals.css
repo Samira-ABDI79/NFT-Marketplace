@@ -73,8 +73,19 @@ input {
 line-height: 1;
 
 }
-.text0{
-    /* line-height: 0; */
+.filterButton{
+   
+    transition: all .3s ease-in;
+    font-size: 1.3rem;
+    cursor: pointer;
+  
+
+}.filterButton:hover{
+    border: 1px solid #ffdf2b;
+    box-shadow: 1px 1px 2px #ffdf2b,-1px -1px 2px #ffdf2b;
+
+
 }
+
 
   

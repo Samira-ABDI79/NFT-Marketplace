@@ -8,6 +8,7 @@ import ExploreVideo from "../components/ExploreVideo";
 import TopListCreators from "../components/TopListCreators";
 import BrowseCategory from "../components/BrowseCategory";
 import TheVideos from "../components/TheVideos";
+import FeaturedNFTs from "../components/FeaturedNFTs";
 
 function Home(){
   return(
@@ -50,6 +51,7 @@ function Home(){
       <AudioCollection />
       <ExploreVideo />
       <TopListCreators />
+      <FeaturedNFTs />
       <BrowseCategory />
       <MissDrop />
 

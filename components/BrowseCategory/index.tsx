@@ -73,7 +73,7 @@ function BrowseCategory(){
         <>
           {/* Galery */}
           <section className="container" >
-              <h1 className="text-5xl font-bold text0"  >Browse by category</h1>
+              <h1 className="text-5xl font-bold "  >Browse by category</h1>
               <p className="text-xl mt-6">Explore the NFTs in the most featured categories.</p>
               <div className="my-16 flex flex-wrap justify-between">
             {CategoryList.map(({image,topic,count,}, index) => (
