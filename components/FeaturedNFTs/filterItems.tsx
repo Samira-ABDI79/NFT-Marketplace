@@ -4,8 +4,8 @@ function FilterItems(){
     const [typefilter,setType]=useState("music")
     return(
         <>
-        <section className="flex justify-between items-center w-[70%] mt-12" >
-            <div >
+        <section className="flex lg:flex-row flex-col justify-between items-center w-[70%] mt-12" >
+            <div className="lg:mt-0 mt-4" >
             <div   onClick={()=>setType("ETH")} className="flex bg-icons  w-32 text-shadowLight rounded-full px-3 py-1 text-lg items-center justify-between" >
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
             <path d="M461.2 128H80c-8.84 0-16-7.16-16-16s7.16-16 16-16h384c8.84 0 16-7.16 16-16 0-26.51-21.49-48-48-48H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h397.2c28.02 0 50.8-21.53 50.8-48V176c0-26.47-22.78-48-50.8-48zM416 336c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z">
@@ -17,7 +17,7 @@ function FilterItems(){
         </svg>
         </div>
         </div>
-        <div >
+        <div className="lg:mt-0 mt-4" >
             <div onClick={()=>setType("image")} className="flex rounded-full border border-icons w-32 px-3 py-1 text-lg items-center justify-between">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
             <path d="M480 416v16c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V176c0-26.51 21.49-48 48-48h16v208c0 44.112 35.888 80 80 80h336zm96-80V80c0-26.51-21.49-48-48-48H144c-26.51 0-48 21.49-48 48v256c0 26.51 21.49 48 48 48h384c26.51 0 48-21.49 48-48zM256 128c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-96 144l55.515-55.515c4.686-4.686 12.284-4.686 16.971 0L272 256l135.515-135.515c4.686-4.686 12.284-4.686 16.971 0L512 208v112H160v-48z">
@@ -29,7 +29,7 @@ function FilterItems(){
         </svg>
         </div>
         </div>
-        <div >
+        <div className="lg:mt-0 mt-4" >
             <div onClick={()=>setType("video")} className="flex rounded-full border border-icons w-32 px-3 py-1 text-lg items-center justify-between">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
             <path d="M336.2 64H47.8C21.4 64 0 85.4 0 111.8v288.4C0 426.6 21.4 448 47.8 448h288.4c26.4 0 47.8-21.4 47.8-47.8V111.8c0-26.4-21.4-47.8-47.8-47.8zm189.4 37.7L416 177.3v157.4l109.6 75.5c21.2 14.6 50.4-.3 50.4-25.8V127.5c0-25.4-29.1-40.4-50.4-25.8z">
@@ -41,7 +41,7 @@ function FilterItems(){
         </svg>
         </div>
         </div>
-        <div >
+        <div className="lg:mt-0 mt-4" >
             <div onClick={()=>setType("music")}  className="flex rounded-full border border-icons w-32 px-3 py-1 text-lg items-center justify-between" >
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
             <path d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z">
@@ -53,7 +53,7 @@ function FilterItems(){
         </svg>
         </div>
         </div>
-        <div >
+        <div className="lg:mt-0 mt-4" >
             <div onClick={()=>setType("verified")} className="flex bg-icons  w-32 text-shadowLight rounded-full px-3 py-1 text-lg items-center justify-between">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
             <path d="M256 288c79.5 0 144-64.5 144-144S335.5 0 256 0 112 64.5 112 144s64.5 144 144 144zm128 32h-55.1c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16H128C57.3 320 0 377.3 0 448v16c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48v-16c0-70.7-57.3-128-128-128z">
@@ -74,7 +74,7 @@ function FilterItems(){
    {CartList.map(({price,count,time,likeCount,images,image,type}, index) => (
        <div>
            {typefilter==type ? 
-               <div className="rounded-2xl  z900  transitionAll p-6   w-[19rem] lg:mt-0 mt-12 h-[30rem]">
+               <div className="rounded-2xl  z900  transitionAll p-6   lg:w-[19rem] w-full lg:mt-0 mt-12 h-[30rem]">
           
                <img src={image} alt="NFT" className="   rounded-2xl w-full h-[15rem]" />
             
