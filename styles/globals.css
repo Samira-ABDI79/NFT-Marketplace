@@ -89,5 +89,42 @@ line-height: 1;
 
 }
 
+.menu-item {
+    font-family: Fa-iran-sans-web-light,sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -1px;
+    color: #444;
 
+}
+
+
+/* *************Home */
+.hero-text {
+   
+    line-height: 52px;
+ 
+}
+
+.AuthorProfilesocial {
+    background-color: #ffdf2b;
+    color: #232325;
+    border-radius: 50%;
+   
+    padding: 0.5rem;
+    border: 1px solid #ffdf2b;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.AuthorProfilesocial:hover{
+    color: #ffdf2b;
+    background-color: #232325;
+    box-shadow: 1px 1px 2px #ffdf2b,-1px -1px 2px #ffdf2b;
+
+
+}
   
