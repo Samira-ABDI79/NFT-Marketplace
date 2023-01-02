@@ -1,5 +1,5 @@
 import EarnFree from "../../components/EarnFree";
-
+import Head from 'next/head'
 const FounderCart=[
     {
         id:1,
@@ -48,6 +48,11 @@ const FactsCart=[
 function About (){
     return(
         <>
+        <Head>
+                <meta name="viewport" content="width=device-width"/>
+                <meta name="next-head-count" content="2"/>
+                <title>About Us</title>
+                       </Head>
         <section className="container my-20">
            <div className="flex justify-between lg:flex-row flex-col items-center">
            <div id="textBox" className="lg:w-[40%] w-full">
@@ -65,7 +70,7 @@ function About (){
             <p  className="lg:w-[80%] w-full text-xl">We’re impartial and independent, and every day we create distinctive, world-class programmes and content</p>
             </div>
 
-           <article className="flex justify-between lg:flex-row flex-col">
+           <article className="flex justify-between lg:flex-row flex-col mt-10">
            {FounderCart.map((item) => (
             
 

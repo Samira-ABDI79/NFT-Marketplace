@@ -1,4 +1,4 @@
-
+import Head from "next/head";
 
 const ConnectWalletList=[
     {
@@ -29,6 +29,11 @@ const ConnectWalletList=[
 function ConnectWallet(){
     return(
         <>
+               <Head>
+                <meta name="viewport" content="width=device-width"/>
+                <meta name="next-head-count" content="2"/>
+                <title>Connect Wallet</title>
+                       </Head>
         <section className="container">
             
        <div className=" my-12 container lg:w-[70%]">

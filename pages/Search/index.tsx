@@ -1,9 +1,15 @@
+import Head from "next/head";
 import EarnFree from "../../components/EarnFree";
 import ExploreVideo from "../../components/ExploreVideo";
 import FeaturedNFTs from "../../components/FeaturedNFTs";
 function Search(){
   return(
     <>
+       <Head>
+                <meta name="viewport" content="width=device-width"/>
+                <meta name="next-head-count" content="2"/>
+                <title>Search</title>
+                       </Head>
    <section className="container">
   <div className="flex justify-center items-center my-20">
   <div className="flex justify-between items-center border-[1px] px-6 py-10 border-icons  h-10 rounded-full w-[60%]" >

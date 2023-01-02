@@ -1,3 +1,4 @@
+import Head from "next/head";
 import EarnFree from "../../components/EarnFree";
 import ExploreVideo from "../../components/ExploreVideo";
 import FeaturedNFTs from "../../components/FeaturedNFTs";
@@ -26,6 +27,11 @@ const NFTsCollection=[
 function Collection(){
     return (
         <>
+           <Head>
+                <meta name="viewport" content="width=device-width"/>
+                <meta name="next-head-count" content="2"/>
+                <title>Collection</title>
+                       </Head>
             <img src="/assets/creatorbackground-1.jpeg" alt="Collection" className="my-12 h-24 object-cover w-screen" />
 
         <section className="container mb-16">

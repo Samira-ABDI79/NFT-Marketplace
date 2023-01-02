@@ -1,5 +1,5 @@
 
-
+import Head from "next/head";
     const icons=[
         {
             id:1,
@@ -20,6 +20,11 @@
     function Login(){
         return(
             <>
+              <Head>
+                <meta name="viewport" content="width=device-width"/>
+                <meta name="next-head-count" content="2"/>
+                <title>Login</title>
+                       </Head>
             <section className="container ">
                 <main className=" flex justify-center flex-col items-center my-20">
                    <div className="lg:w-[33%] w-full">

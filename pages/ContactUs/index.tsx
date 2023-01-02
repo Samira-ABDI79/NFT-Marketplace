@@ -1,8 +1,13 @@
 import Button from "../../components/Button";
-
+import Head from "next/head";
 function ContactUs(){
     return(
         <>
+          <Head>
+                <meta name="viewport" content="width=device-width"/>
+                <meta name="next-head-count" content="2"/>
+                <title>Contact Us</title>
+                       </Head>
          <section className="container">
             
           

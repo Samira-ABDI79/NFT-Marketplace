@@ -9,11 +9,16 @@ import TopListCreators from "../components/TopListCreators";
 import BrowseCategory from "../components/BrowseCategory";
 import TheVideos from "../components/TheVideos";
 import FeaturedNFTs from "../components/FeaturedNFTs";
+import Head from "next/head";
 
 function Home(){
   return(
     <>
-
+     <Head>
+                <meta name="viewport" content="width=device-width"/>
+                <meta name="next-head-count" content="2"/>
+                <title> NFT Marketplace</title>
+                       </Head>
 <section className="container my-20">
         <div className="flex justify-between lg:flex-row flex-col">
             <div className="lg:w-[40%] w-full">

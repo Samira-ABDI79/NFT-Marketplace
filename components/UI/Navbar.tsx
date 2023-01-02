@@ -92,8 +92,13 @@ const Navbar = () => {
         <div>
         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" className="w-8 h-8"  xmlns="http://www.w3.org/2000/svg"><path d="M12 22c1.1 0 2-.9 2-2h-4a2 2 0 002 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"></path></svg>
         </div>
-        <button className="lg:inline-block hidden ButtonQHarr rounded-full shadow-icons border-icons px-8 py-4 border   hover:bg-shadowLight bg-icons text-shadowLight hover:text-icons " > Connect</button>
-        <img alt="Profile" src="/assets/user-1.png" className="lg:mr-0 mr-8 w-16 h-16 rounded-full" ></img>
+        <Link href="/ContactUs">
+       <button className="lg:inline-block hidden ButtonQHarr rounded-full shadow-icons border-icons px-8 py-4 border   hover:bg-shadowLight bg-icons text-shadowLight hover:text-icons " > Connect</button>
+        </Link>
+        <Link href="/AccountSetting">
+       <img alt="Profile" src="/assets/user-1.png" className="lg:mr-0 mr-8 w-16 h-16 rounded-full" ></img>
+        
+        </Link>
         </div>
         {Discover ? 
         <ul className="boxShadow absolute left-[40%] top-[12%] py-4 px-2 text-lg  w-[15rem] rounded-xl flex flex-col bg-shadowLight" >

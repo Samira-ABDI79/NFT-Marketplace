@@ -1,4 +1,4 @@
-
+import Head from "next/head";
 import Button from "../../components/Button";
 const collectionlist=[
     {
@@ -35,6 +35,11 @@ const collectionlist=[
 function UploadNFT(){
     return(
         <>
+            <Head>
+                <meta name="viewport" content="width=device-width"/>
+                <meta name="next-head-count" content="2"/>
+                <title>  UploadNFT</title>
+                       </Head>
         <section className="container">
             
        <div className=" my-12 container lg:w-[80%]">
@@ -121,96 +126,57 @@ function UploadNFT(){
 </div>
          
            </section>
-           <article>
-               <div >
-                   <div >
-                   <label htmlFor="Royalties">Royalties</label>
-               <div >
-                   <div >
-                   <div className="flex items-center">
-               <div className="bg-icons rounded-l-2xl flex justify-center items-center h-12 w-12" >
-               
-               <svg  className="bg-icons text-shadowLight w-6 h-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                   <path d="M112 224c61.9 0 112-50.1 112-112S173.9 0 112 0 0 50.1 0 112s50.1 112 112 112zm0-160c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zm224 224c-61.9 0-112 50.1-112 112s50.1 112 112 112 112-50.1 112-112-50.1-112-112-112zm0 160c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zM392.3.2l31.6-.1c19.4-.1 30.9 21.8 19.7 37.8L77.4 501.6a23.95 23.95 0 0 1-19.6 10.2l-33.4.1c-19.5 0-30.9-21.9-19.7-37.8l368-463.7C377.2 4 384.5.2 392.3.2z">
-                   </path>
-               </svg>
-               </div> </div>
+          <article className="grid lg:grid-cols-3 lg:grid-rows-2  gap-2 mb-10 ">
+                 {/* Royalties */}
+
+    <div className="col-span-1 row-span-1 flex-col flex"><label className="text-xl mt-3" htmlFor="Royalties">Royalties</label>
+           <div className="flex items-center"><div className="bg-icons rounded-l-2xl flex justify-center items-center h-12 w-12" >
+           <svg className="bg-icons text-shadowLight w-6 h-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M112 224c61.9 0 112-50.1 112-112S173.9 0 112 0 0 50.1 0 112s50.1 112 112 112zm0-160c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zm224 224c-61.9 0-112 50.1-112 112s50.1 112 112 112 112-50.1 112-112-50.1-112-112-112zm0 160c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zM392.3.2l31.6-.1c19.4-.1 30.9 21.8 19.7 37.8L77.4 501.6a23.95 23.95 0 0 1-19.6 10.2l-33.4.1c-19.5 0-30.9-21.9-19.7-37.8l368-463.7C377.2 4 384.5.2 392.3.2z"></path></svg>
                </div>
-               <input
+           <input
                className="border border-icons w-full outline-none bg-shadowLight rounded-r-2xl h-12 px-5 py-2 "                           
-               
-               type="text" placeholder="20%"/>
-                   </div>
-               </div>
-               <div >
-                   <label htmlFor="size">Size</label>
-               <div >
-                   <div >
-                   <div className="flex items-center">
-               <div className="bg-icons rounded-l-2xl flex justify-center items-center h-12 w-12" >
-               
-               <svg  className="bg-icons text-shadowLight w-6 h-6"stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                   <path fill="none" d="M0 0h24v24H0V0z">
-                   </path>
-               <path d="M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5a2.5 2.5 0 015 0v10.5c0 .55-.45 1-1 1s-1-.45-1-1V6H10v9.5a2.5 2.5 0 005 0V5c0-2.21-1.79-4-4-4S7 2.79 7 5v12.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5V6h-1.5z">
-                   </path>
-               </svg>
+           type="text" placeholder="20%"/>
                </div></div>
+
+
+   {/* Size */}
+
+   <div className="col-span-1 row-span-1 flex-col flex"><label className="text-xl mt-3" htmlFor="Size">Size</label>
+           <div className="flex items-center"><div className="bg-icons rounded-l-2xl flex justify-center items-center h-12 w-12" >
+           <svg className="bg-icons text-shadowLight w-6 h-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5a2.5 2.5 0 015 0v10.5c0 .55-.45 1-1 1s-1-.45-1-1V6H10v9.5a2.5 2.5 0 005 0V5c0-2.21-1.79-4-4-4S7 2.79 7 5v12.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5V6h-1.5z"></path></svg>
                </div>
-               <input
+           <input
                className="border border-icons w-full outline-none bg-shadowLight rounded-r-2xl h-12 px-5 py-2 "                           
-               
-               type="text" placeholder="165MB"/>
-                   </div>
+           type="text" placeholder="165MB"/>
+               </div></div>
+
+                  {/* Propertie */}
+
+    <div className="col-span-1 row-span-1 flex-col flex"><label className="text-xl mt-3" htmlFor="Propertie">Propertie</label>
+           <div className="flex items-center"><div className="bg-icons rounded-l-2xl flex justify-center items-center h-12 w-12" >
+           <svg className="bg-icons text-shadowLight w-6 h-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M866.9 169.9L527.1 54.1C523 52.7 517.5 52 512 52s-11 .7-15.1 2.1L157.1 169.9c-8.3 2.8-15.1 12.4-15.1 21.2v482.4c0 8.8 5.7 20.4 12.6 25.9L499.3 968c3.5 2.7 8 4.1 12.6 4.1s9.2-1.4 12.6-4.1l344.7-268.6c6.9-5.4 12.6-17 12.6-25.9V191.1c.2-8.8-6.6-18.3-14.9-21.2zM810 654.3L512 886.5 214 654.3V226.7l298-101.6 298 101.6v427.6z"></path><path d="M214 226.7v427.6l298 232.2 298-232.2V226.7L512 125.1 214 226.7zM593.9 318h45c5.5 0 10 4.5 10 10 .1 1.7-.3 3.3-1.1 4.8l-87.7 161.1h45.7c5.5 0 10 4.5 10 10v21.3c0 5.5-4.5 10-10 10h-63.4v29.7h63.4c5.5 0 10 4.5 10 10v21.3c0 5.5-4.5 10-10 10h-63.4V658c0 5.5-4.5 10-10 10h-41.3c-5.5 0-10-4.5-10-10v-51.8H418c-5.5 0-10-4.5-10-10v-21.3c0-5.5 4.5-10 10-10h63.1v-29.7H418c-5.5 0-10-4.5-10-10v-21.3c0-5.5 4.5-10 10-10h45.2l-88-161.1c-2.6-4.8-.9-10.9 4-13.6 1.5-.8 3.1-1.2 4.8-1.2h46c3.8 0 7.2 2.1 8.9 5.5l72.9 144.3L585 323.5a10 10 0 0 1 8.9-5.5z"></path><path d="M438.9 323.5a9.88 9.88 0 0 0-8.9-5.5h-46c-1.7 0-3.3.4-4.8 1.2-4.9 2.7-6.6 8.8-4 13.6l88 161.1H418c-5.5 0-10 4.5-10 10v21.3c0 5.5 4.5 10 10 10h63.1v29.7H418c-5.5 0-10 4.5-10 10v21.3c0 5.5 4.5 10 10 10h63.1V658c0 5.5 4.5 10 10 10h41.3c5.5 0 10-4.5 10-10v-51.8h63.4c5.5 0 10-4.5 10-10v-21.3c0-5.5-4.5-10-10-10h-63.4v-29.7h63.4c5.5 0 10-4.5 10-10v-21.3c0-5.5-4.5-10-10-10h-45.7l87.7-161.1c.8-1.5 1.2-3.1 1.1-4.8 0-5.5-4.5-10-10-10h-45a10 10 0 0 0-8.9 5.5l-73.2 144.3-72.9-144.3z"></path></svg>
                </div>
-               <div >
-                   <label htmlFor="Propertie">Propertie</label>
-               <div >
-                   <div >
-                   <div className="flex items-center">
-               <div className="bg-icons rounded-l-2xl flex justify-center items-center h-12 w-12" >
-               
-               <svg  className="bg-icons text-shadowLight w-6 h-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                   <path d="M866.9 169.9L527.1 54.1C523 52.7 517.5 52 512 52s-11 .7-15.1 2.1L157.1 169.9c-8.3 2.8-15.1 12.4-15.1 21.2v482.4c0 8.8 5.7 20.4 12.6 25.9L499.3 968c3.5 2.7 8 4.1 12.6 4.1s9.2-1.4 12.6-4.1l344.7-268.6c6.9-5.4 12.6-17 12.6-25.9V191.1c.2-8.8-6.6-18.3-14.9-21.2zM810 654.3L512 886.5 214 654.3V226.7l298-101.6 298 101.6v427.6z">
-                   </path>
-               <path d="M214 226.7v427.6l298 232.2 298-232.2V226.7L512 125.1 214 226.7zM593.9 318h45c5.5 0 10 4.5 10 10 .1 1.7-.3 3.3-1.1 4.8l-87.7 161.1h45.7c5.5 0 10 4.5 10 10v21.3c0 5.5-4.5 10-10 10h-63.4v29.7h63.4c5.5 0 10 4.5 10 10v21.3c0 5.5-4.5 10-10 10h-63.4V658c0 5.5-4.5 10-10 10h-41.3c-5.5 0-10-4.5-10-10v-51.8H418c-5.5 0-10-4.5-10-10v-21.3c0-5.5 4.5-10 10-10h63.1v-29.7H418c-5.5 0-10-4.5-10-10v-21.3c0-5.5 4.5-10 10-10h45.2l-88-161.1c-2.6-4.8-.9-10.9 4-13.6 1.5-.8 3.1-1.2 4.8-1.2h46c3.8 0 7.2 2.1 8.9 5.5l72.9 144.3L585 323.5a10 10 0 0 1 8.9-5.5z">
-                   </path>
-               <path d="M438.9 323.5a9.88 9.88 0 0 0-8.9-5.5h-46c-1.7 0-3.3.4-4.8 1.2-4.9 2.7-6.6 8.8-4 13.6l88 161.1H418c-5.5 0-10 4.5-10 10v21.3c0 5.5 4.5 10 10 10h63.1v29.7H418c-5.5 0-10 4.5-10 10v21.3c0 5.5 4.5 10 10 10h63.1V658c0 5.5 4.5 10 10 10h41.3c5.5 0 10-4.5 10-10v-51.8h63.4c5.5 0 10-4.5 10-10v-21.3c0-5.5-4.5-10-10-10h-63.4v-29.7h63.4c5.5 0 10-4.5 10-10v-21.3c0-5.5-4.5-10-10-10h-45.7l87.7-161.1c.8-1.5 1.2-3.1 1.1-4.8 0-5.5-4.5-10-10-10h-45a10 10 0 0 0-8.9 5.5l-73.2 144.3-72.9-144.3z">
-                   </path>
-               </svg>
-               </div>
-               </div>
-               </div>
-               <input
+           <input
                className="border border-icons w-full outline-none bg-shadowLight rounded-r-2xl h-12 px-5 py-2 "                           
+           type="text" placeholder="Propertie"/>
+               </div></div>
                
-               type="text" placeholder="Propertie"/>
-                   </div>
+         {/* Price */}
+
+         <div className="col-span-1 row-span-1 flex-col flex"><label className="text-xl mt-3" htmlFor="Price">Price</label>
+           <div className="flex items-center"><div className="bg-icons rounded-l-2xl flex justify-center items-center h-12 w-12" >
+           <svg className="bg-icons text-shadowLight w-6 h-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M866.9 169.9L527.1 54.1C523 52.7 517.5 52 512 52s-11 .7-15.1 2.1L157.1 169.9c-8.3 2.8-15.1 12.4-15.1 21.2v482.4c0 8.8 5.7 20.4 12.6 25.9L499.3 968c3.5 2.7 8 4.1 12.6 4.1s9.2-1.4 12.6-4.1l344.7-268.6c6.9-5.4 12.6-17 12.6-25.9V191.1c.2-8.8-6.6-18.3-14.9-21.2zM810 654.3L512 886.5 214 654.3V226.7l298-101.6 298 101.6v427.6z"></path><path d="M214 226.7v427.6l298 232.2 298-232.2V226.7L512 125.1 214 226.7zM593.9 318h45c5.5 0 10 4.5 10 10 .1 1.7-.3 3.3-1.1 4.8l-87.7 161.1h45.7c5.5 0 10 4.5 10 10v21.3c0 5.5-4.5 10-10 10h-63.4v29.7h63.4c5.5 0 10 4.5 10 10v21.3c0 5.5-4.5 10-10 10h-63.4V658c0 5.5-4.5 10-10 10h-41.3c-5.5 0-10-4.5-10-10v-51.8H418c-5.5 0-10-4.5-10-10v-21.3c0-5.5 4.5-10 10-10h63.1v-29.7H418c-5.5 0-10-4.5-10-10v-21.3c0-5.5 4.5-10 10-10h45.2l-88-161.1c-2.6-4.8-.9-10.9 4-13.6 1.5-.8 3.1-1.2 4.8-1.2h46c3.8 0 7.2 2.1 8.9 5.5l72.9 144.3L585 323.5a10 10 0 0 1 8.9-5.5z"></path><path d="M438.9 323.5a9.88 9.88 0 0 0-8.9-5.5h-46c-1.7 0-3.3.4-4.8 1.2-4.9 2.7-6.6 8.8-4 13.6l88 161.1H418c-5.5 0-10 4.5-10 10v21.3c0 5.5 4.5 10 10 10h63.1v29.7H418c-5.5 0-10 4.5-10 10v21.3c0 5.5 4.5 10 10 10h63.1V658c0 5.5 4.5 10 10 10h41.3c5.5 0 10-4.5 10-10v-51.8h63.4c5.5 0 10-4.5 10-10v-21.3c0-5.5-4.5-10-10-10h-63.4v-29.7h63.4c5.5 0 10-4.5 10-10v-21.3c0-5.5-4.5-10-10-10h-45.7l87.7-161.1c.8-1.5 1.2-3.1 1.1-4.8 0-5.5-4.5-10-10-10h-45a10 10 0 0 0-8.9 5.5l-73.2 144.3-72.9-144.3z"></path></svg>
                </div>
-               <div >
-                   <label htmlFor="Price">Price</label>
-               <div >
-                   <div >
-                   
-                   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                   <path d="M866.9 169.9L527.1 54.1C523 52.7 517.5 52 512 52s-11 .7-15.1 2.1L157.1 169.9c-8.3 2.8-15.1 12.4-15.1 21.2v482.4c0 8.8 5.7 20.4 12.6 25.9L499.3 968c3.5 2.7 8 4.1 12.6 4.1s9.2-1.4 12.6-4.1l344.7-268.6c6.9-5.4 12.6-17 12.6-25.9V191.1c.2-8.8-6.6-18.3-14.9-21.2zM810 654.3L512 886.5 214 654.3V226.7l298-101.6 298 101.6v427.6z">
-                   </path>
-               <path d="M214 226.7v427.6l298 232.2 298-232.2V226.7L512 125.1 214 226.7zM593.9 318h45c5.5 0 10 4.5 10 10 .1 1.7-.3 3.3-1.1 4.8l-87.7 161.1h45.7c5.5 0 10 4.5 10 10v21.3c0 5.5-4.5 10-10 10h-63.4v29.7h63.4c5.5 0 10 4.5 10 10v21.3c0 5.5-4.5 10-10 10h-63.4V658c0 5.5-4.5 10-10 10h-41.3c-5.5 0-10-4.5-10-10v-51.8H418c-5.5 0-10-4.5-10-10v-21.3c0-5.5 4.5-10 10-10h63.1v-29.7H418c-5.5 0-10-4.5-10-10v-21.3c0-5.5 4.5-10 10-10h45.2l-88-161.1c-2.6-4.8-.9-10.9 4-13.6 1.5-.8 3.1-1.2 4.8-1.2h46c3.8 0 7.2 2.1 8.9 5.5l72.9 144.3L585 323.5a10 10 0 0 1 8.9-5.5z">
-                   </path>
-               <path d="M438.9 323.5a9.88 9.88 0 0 0-8.9-5.5h-46c-1.7 0-3.3.4-4.8 1.2-4.9 2.7-6.6 8.8-4 13.6l88 161.1H418c-5.5 0-10 4.5-10 10v21.3c0 5.5 4.5 10 10 10h63.1v29.7H418c-5.5 0-10 4.5-10 10v21.3c0 5.5 4.5 10 10 10h63.1V658c0 5.5 4.5 10 10 10h41.3c5.5 0 10-4.5 10-10v-51.8h63.4c5.5 0 10-4.5 10-10v-21.3c0-5.5-4.5-10-10-10h-63.4v-29.7h63.4c5.5 0 10-4.5 10-10v-21.3c0-5.5-4.5-10-10-10h-45.7l87.7-161.1c.8-1.5 1.2-3.1 1.1-4.8 0-5.5-4.5-10-10-10h-45a10 10 0 0 0-8.9 5.5l-73.2 144.3-72.9-144.3z">
-                   </path>
-               </svg>
-               </div>
-               <input
+           <input
                className="border border-icons w-full outline-none bg-shadowLight rounded-r-2xl h-12 px-5 py-2 "                           
-               
-               type="text" placeholder="Price"/>
-                   </div>
-               </div>
-               </div>
-           </article>
+           type="text" placeholder="Price"/>
+               </div></div>
+
+          </article>
+              <div className="flex justify-between lg:w-[30%] w-[50%]">
               <Button title="Upload" type="yellow" />
               <Button title="Preview" type="yellow" />
+              </div>
 
        
                   </form>

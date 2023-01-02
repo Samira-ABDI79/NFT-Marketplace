@@ -1,5 +1,5 @@
 import Button from "../../components/Button"
-
+import Head from "next/head";
 const SubscriptionList=[
     {
         id:1,
@@ -59,6 +59,11 @@ const SubscriptionList=[
 function Subscription(){
     return(
         <>
+          <Head>
+                <meta name="viewport" content="width=device-width"/>
+                <meta name="next-head-count" content="2"/>
+                <title> Subscription</title>
+                       </Head>
        <div className="text-center text-white my-12">
        <h1 className="text-5xl font-bold">💎 Subscription</h1>
         <p className="text-xl my-6">Pricing to fit the needs of any companie size.</p>
