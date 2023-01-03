@@ -1,5 +1,5 @@
 import EarnFree from "../components/EarnFree";
-import Button from "../components/Button";
+import { useRouter } from "next/router";
 import { services } from "../services/data/services";
 import HelloNFT from "../components/HelloNFT";
 import AudioCollection from "../components/AudioCollection";
@@ -10,8 +10,9 @@ import BrowseCategory from "../components/BrowseCategory";
 import TheVideos from "../components/TheVideos";
 import FeaturedNFTs from "../components/FeaturedNFTs";
 import Head from "next/head";
-
+import Button from "../components/Button";
 function Home(){
+  const router = useRouter();
   return(
     <>
      <Head>
@@ -25,7 +26,11 @@ function Home(){
                 <h1 className="text-[5rem] font-bold text1">Discover, collect, and sell NFTs  🖼️</h1>
                 <p className="font-bold my-10 text-xl">Discover the most outstanding NTFs in all topics of life. Creative your NTFs and sell them</p>
                 <div className="flex justify-between lg:w-[50%] w-[70%]">
-                    <Button title="Start your search" type="yellow" />
+                   
+                    <button
+         onClick={() => router.push("/Search")}
+        className="ButtonQHarr rounded-full shadow-icons border-icons px-8 py-4 border   hover:bg-shadowLight bg-icons text-shadowLight hover:text-icons ">Start your search</button>
+
                 </div>
             </div>
         <img src="/assets/hero.png" alt="NFT" className="lg:w-[60%] w-full lg:mt-0 mt-12" />

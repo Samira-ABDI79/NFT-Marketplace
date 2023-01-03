@@ -1,6 +1,9 @@
 import Link from "next/link";
-import Button from "../Button";
+
+import { useRouter } from "next/router";
 function EarnFree (){
+  const router = useRouter();
+
     return (
         <>
         <section className="container my-20">
@@ -12,8 +15,15 @@ function EarnFree (){
                 <h1 className="text-[5rem] font-bold text1">Earn free crypto with Ciscrypt</h1>
                 <p className="font-bold my-10 text-xl">A creative agency that lead and inspire.</p>
                 <div className="flex justify-between lg:w-[50%] w-[70%]">
-                    <Button title="Create" type="yellow" />
-                    <Button title="Discover" type="yellow" />
+                   
+        <button
+        onClick={() => router.push("/UploadNFT")}
+        className="ButtonQHarr rounded-full shadow-icons border-icons px-8 py-4 border   hover:bg-shadowLight bg-icons text-shadowLight hover:text-icons ">Create</button>
+        <button
+         onClick={() => router.push("/Search")}
+        className="ButtonQHarr rounded-full shadow-icons border-icons px-8 py-4 border   hover:bg-shadowLight bg-icons text-shadowLight hover:text-icons ">Discover</button>
+
+                    
 
 
                 </div>

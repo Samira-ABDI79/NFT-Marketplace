@@ -1,6 +1,7 @@
 interface input{
     type:string;
     title:string;
+  
 }
 
 function Button(props:input){
