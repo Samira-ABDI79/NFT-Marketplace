@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 
-
+import AcountMenu from "./AcountMenu";
 export const HelpCenterMenu=[
   {
     name:"About",
@@ -60,6 +60,10 @@ export const Discovermenu = [
 const Navbar = () => {
   const [Helpopen, setHelpOpen] = useState(false);
   const [Discover, setDiscover] = useState(false);
+  const [Alert, setAlert] = useState(false);
+  const [acountMenu, setAcountMenut] = useState(false);
+
+
 
 
 
@@ -90,16 +94,49 @@ const Navbar = () => {
           }}>
         Help Center</button>
         <div>
-        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" className="w-8 h-8"  xmlns="http://www.w3.org/2000/svg"><path d="M12 22c1.1 0 2-.9 2-2h-4a2 2 0 002 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"></path></svg>
+        <svg onClick={()=>setAlert(true)} stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" className="w-8 h-8"  xmlns="http://www.w3.org/2000/svg"><path d="M12 22c1.1 0 2-.9 2-2h-4a2 2 0 002 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"></path></svg>
         </div>
         <Link href="/ContactUs">
        <button className="lg:inline-block hidden ButtonQHarr rounded-full shadow-icons border-icons px-8 py-4 border   hover:bg-shadowLight bg-icons text-shadowLight hover:text-icons " > Connect</button>
         </Link>
-        <Link href="/AccountSetting">
-       <img alt="Profile" src="/assets/user-1.png" className="lg:mr-0 mr-8 w-16 h-16 rounded-full" ></img>
+      
+       <img 
+       onClick={()=>setAcountMenut(true)}
+       alt="Profile" src="/assets/user-1.png" className="lg:mr-0 mr-8 w-16 h-16 rounded-full" ></img>
         
-        </Link>
+     
         </div>
+        {acountMenu ? 
+        <div>
+     <svg
+      onClick={()=>setAcountMenut(false)}
+      className="w-8 h-8 absolute lg:left-[88%]  mt-2 md:left-[84%] left-[72%] z-50"
+     xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor" ><path strokeLinecap="round"strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+          <AcountMenu />
+          </div>
+         :
+        <></>
+        }
+        {Alert ? 
+        <div 
+        onClick={()=>setAlert(false)}
+        id="notificationBox" className="absolute lg:left-[45%] left-[20%] boxShadow  py-4 px-2 text-lg  w-[20rem] rounded-xl flex flex-col bg-shadowLight" >
+          <h1 className="text-2xl font-bold mb-2 ">Notification</h1>
+          <div className="bg-icons text-shadowLight flex justify-between p-2 rounded-lg">
+       <img alt="Profile" src="/assets/user-1.png" className="lg:mr-0 mr-8 w-16 h-16 rounded-full" ></img>
+<div>
+  <p>Shoaib Akhter</p>
+  <p>Measure action your user..</p>
+  <p className="text-bgShadowDark">3 minutes ago</p>
+</div>
+          </div>
+          </div> :
+        <></>
+        }
         {Discover ? 
         <ul className="boxShadow absolute left-[40%] top-[12%] py-4 px-2 text-lg  w-[15rem] rounded-xl flex flex-col bg-shadowLight" >
             {Discovermenu.map(({ name, to }, index) => (
