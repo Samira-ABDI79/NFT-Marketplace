@@ -3,128 +3,420 @@
 @tailwind utilities;
 
 
+/* ********************************* */
+
+
 body, html {
-    padding: 0;
-    margin: 0;
-    font-family: Poppins,sans-serif;
-    font-size: 14px;
-    background-color: #232325;
-    color:#ffdf2b;
+  padding: 0;
+  margin: 0;
+  font-family: Poppins,sans-serif;
+  font-size: 14px;
+  background-color: #232325;
+  color:#ffdf2b;
 }
 .ButtonQHarr {
-  
-    cursor: pointer;
-    transition: all .2s ease-in;
-    box-shadow: 1px 1px 2px #ffdf2b,-1px -1px 2px #ffdf2b;
+
+  cursor: pointer;
+  transition: all .2s ease-in;
+  box-shadow: 1px 1px 2px #ffdf2b,-1px -1px 2px #ffdf2b;
 }
 
 input {
-    color: #ffdf2b;
+  color: #ffdf2b;
 }
 
 .DiscoverItem {
-    padding: 0.5rem 1rem;
-    transition: all .3s ease-in;
-   
+  padding: 0.5rem 1rem;
+  transition: all .3s ease-in;
+ 
 }
 .transitionAll{
-    transition: all .3s ease-in;
+  transition: all .3s ease-in;
 
 }
 .transitionAll:hover{
-    box-shadow: 1px 1px 2px #ffdf2b,-1px -1px 2px #ffdf2b;
+  box-shadow: 1px 1px 2px #ffdf2b,-1px -1px 2px #ffdf2b;
 
 }
 .boxShadow{
-    box-shadow: 1px 1px 2px #ffdf2b,-1px -1px 2px #ffdf2b;
+  box-shadow: 1px 1px 2px #ffdf2b,-1px -1px 2px #ffdf2b;
 }
 
 .bigNFTSliderIcon{
-    cursor: pointer;
-    transition: all .3s ease-in;
+  cursor: pointer;
+  transition: all .3s ease-in;
 }
 
 
 .AudioCardboxtime {
-   
-    padding: 0.48rem 4.5rem;
-    margin-right: -1.4rem;
-    transform: skewX(35deg);
-    border-bottom-left-radius: 1rem;
+ 
+  padding: 0.48rem 4.5rem;
+  margin-right: -1.4rem;
+  transform: skewX(35deg);
+  border-bottom-left-radius: 1rem;
 }
 .boxtime_remaing {
-    transform: skewX(-35deg);
-    text-align: center;
+  transform: skewX(-35deg);
+  text-align: center;
 }
 
 .boxtime_remaing h5 {
-    font-size: 1.5rem;
-   
+  font-size: 1.5rem;
+ 
 }
 
 .z900{
-    z-index: 99999999;
-    transition: all .3s ease-in;
+  z-index: 99999999;
+  transition: all .3s ease-in;
 
 
 }
 .z900:hover , .z900:active{
-    border: 1px solid #ffdf2b;
+  border: 1px solid #ffdf2b;
 }
 .text1{
 line-height: 1;
 
 }
 .filterButton{
-   
-    transition: all .3s ease-in;
-    font-size: 1.3rem;
-    cursor: pointer;
-  
+ 
+  transition: all .3s ease-in;
+  font-size: 1.3rem;
+  cursor: pointer;
+
 
 }.filterButton:hover{
-    border: 1px solid #ffdf2b;
-    box-shadow: 1px 1px 2px #ffdf2b,-1px -1px 2px #ffdf2b;
+  border: 1px solid #ffdf2b;
+  box-shadow: 1px 1px 2px #ffdf2b,-1px -1px 2px #ffdf2b;
 
 
 }
 
 .menu-item {
-    font-family: Fa-iran-sans-web-light,sans-serif;
-    font-size: 19px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: -1px;
-    color: #444;
+  font-family: Fa-iran-sans-web-light,sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -1px;
+  color: #444;
 
 }
 
 
 /* *************Home */
 .hero-text {
-   
-    line-height: 52px;
  
+  line-height: 52px;
+
 }
 
 .AuthorProfilesocial {
-    background-color: #ffdf2b;
-    color: #232325;
-    border-radius: 50%;
-   
-    padding: 0.5rem;
-    border: 1px solid #ffdf2b;
-    transition: all .3s ease-in;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #ffdf2b;
+  color: #232325;
+  border-radius: 50%;
+ 
+  padding: 0.5rem;
+  border: 1px solid #ffdf2b;
+  transition: all .3s ease-in;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .AuthorProfilesocial:hover{
-    color: #ffdf2b;
-    background-color: #232325;
-    box-shadow: 1px 1px 2px #ffdf2b,-1px -1px 2px #ffdf2b;
+  color: #ffdf2b;
+  background-color: #232325;
+  box-shadow: 1px 1px 2px #ffdf2b,-1px -1px 2px #ffdf2b;
 
 
 }
-  
+/* ******************************* */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* //THEME 1 */
+/* :root{
+  --icons-color: #4c5773;
+  --icons-light-color: #4c577341;
+  --icons-bg-color: #e2e6e9;
+  --shadow-dark-color: #d3dae7;
+  --bg-shadow-dark-color: #d3dae745;
+  --shadow-light-color: #fff;
+  --main-bg-color: #ecf0f3;
+
+  --box-shadow: 1rem 1rem 1rem var(--shadow-dark-color),
+  -1rem -1rem 1rem var(--shadow-light-color);
+
+
+  --box-shadow-2: 0rem 0rem 0rem var(--shadow-dark-color),
+  -.3rem -.3rem 1rem var(--shadow-dark-color)
+
+} */
+
+
+/* //THEME 11 */
+/* :root{
+  --icons-color: #fff;
+  --icons-light-color: #fff57;
+  --icons-bg-color: #fff;
+  --shadow-dark-color: #2e2c2d;
+  --bg-shadow-dark-color: #2e2c2d;
+  --shadow-light-color: #0E131F;
+  --main-bg-color: #0E131F;
+
+  --box-shadow: 1px 1px 2px #8f2c2c,
+  -1px -1px 2px #c13c3c;
+
+  --box-shadow-2:1px 1px 2px #8f2c2c,
+  -1px -1px 2px #c13c3c;
+} */
+
+
+/* //THEME 2 */
+:root{
+  --icons-color: #FFDF2B;
+  --icons-light-color: #ffdf2b57;
+  --icons-bg-color: #FFDF2B;
+  --shadow-dark-color: #555557;
+  --bg-shadow-dark-color: #555557;
+  --shadow-light-color: #232325;
+  --main-bg-color: #232325;
+  --overlay: #2323255e;
+
+  --box-shadow: 1px 1px 2px #FFDF2B,
+  -1px -1px 2px #FFDF2B;
+
+  --box-shadow-2:1px 1px 2px #FFDF2B,
+  -1px -1px 2px #FFDF2B;
+
+}
+
+/* //THEME 3 */
+/* :root{
+  --icons-color: #9001F5;
+  --icons-light-color: #9001F557;
+  --icons-bg-color: #9001F5;
+  --shadow-dark-color: #312f32;
+  --bg-shadow-dark-color: #312f32;
+  --shadow-light-color: #000000;
+  --main-bg-color: #000000;
+
+  --box-shadow: 1px 1px 2px #9001F5,
+  -1px -1px 2px #9001F5;
+
+  --box-shadow-2:1px 1px 2px #9001F5,
+  -1px -1px 2px #9001F5;
+
+} */
+
+/* //THEME 4 */
+/* :root{
+  --icons-color: #EE0823;
+  --icons-light-color: #EE082357;
+  --icons-bg-color: #EE0823;
+  --shadow-dark-color: #4f4b4b;
+  --bg-shadow-dark-color: #4f4b4b;
+  --shadow-light-color: #031319;
+  --main-bg-color: #031319;
+
+  --box-shadow: 1px 1px 2px #EE0823,
+  -1px -1px 2px #EE0823;
+
+  --box-shadow-2:1px 1px 2px #EE0823,
+  -1px -1px 2px #EE0823;
+
+} */
+
+/* //THEME 5 */
+/* :root{
+  --icons-color: #B901AF;
+  --icons-light-color: #B901AF57;
+  --icons-bg-color: #B901AF;
+  --shadow-dark-color: #343334;
+  --bg-shadow-dark-color: #575357;
+  --shadow-light-color: #290222;
+  --main-bg-color: #290222;
+
+  --box-shadow: 1px 1px 2px #B901AF,
+  -1px -1px 2px #B901AF;
+
+  --box-shadow-2:1px 1px 2px #B901AF,
+  -1px -1px 2px #B901AF;
+
+} */
+
+
+/* //THEME 6 */
+/* :root{
+  --icons-color: #945361;
+  --icons-light-color: #94536157;
+  --icons-bg-color: #945361;
+  --shadow-dark-color: #484546;
+  --bg-shadow-dark-color: #484546;
+  --shadow-light-color: #30154E;
+  --main-bg-color: #30154E;
+
+  --box-shadow: 1px 1px 2px #945361,
+  -1px -1px 2px #945361;
+
+  --box-shadow-2:1px 1px 2px #945361,
+  -1px -1px 2px #945361;
+
+} */
+
+/* //THEME 7 */
+/* :root{
+  --icons-color: #BB22C3;
+  --icons-light-color: #BB22C357;
+  --icons-bg-color: #BB22C3;
+  --shadow-dark-color: #3f3c3f;
+  --bg-shadow-dark-color: #3f3c3f;
+  --shadow-light-color: #30154E;
+  --main-bg-color: #30154E;
+
+  --box-shadow: 1px 1px 2px #BB22C3,
+  -1px -1px 2px #BB22C3;
+
+  --box-shadow-2:1px 1px 2px #BB22C3,
+  -1px -1px 2px #BB22C3;
+
+} */
+
+
+/* //THEME 8 */
+/* :root{
+  --icons-color: #FF5B3E;
+  --icons-light-color: #FF5B3E57;
+  --icons-bg-color: #FF5B3E;
+  --shadow-dark-color: #373535;
+  --bg-shadow-dark-color: #373535;
+  --shadow-light-color: #282828;
+  --main-bg-color: #282828;
+
+  --box-shadow: 1px 1px 2px #FF5B3E,
+  -1px -1px 2px #FF5B3E;
+
+  --box-shadow-2:1px 1px 2px #FF5B3E,
+  -1px -1px 2px #FF5B3E;
+
+} */
+
+
+/* //THEME 9 */
+/* :root{
+  --icons-color: #5DDEE2;
+  --icons-light-color: #5DDEE257;
+  --icons-bg-color: #5DDEE2;
+  --shadow-dark-color: #373939;
+  --bg-shadow-dark-color: #373939;
+  --shadow-light-color: #1B181E;
+  --main-bg-color: #1B181E;
+
+  --box-shadow: 1px 1px 2px #5DDEE2,
+  -1px -1px 2px #5DDEE2;
+
+  --box-shadow-2:1px 1px 2px #5DDEE2,
+  -1px -1px 2px #5DDEE2;
+
+} */
+
+/* //THEME 10 */
+/* :root{
+  --icons-color: #F83166;
+  --icons-light-color: #F8316657;
+  --icons-bg-color: #F83166;
+  --shadow-dark-color: #444142;
+  --bg-shadow-dark-color: #444142;
+  --shadow-light-color: #1E1E1E;
+  --main-bg-color: #1E1E1E;
+
+  --box-shadow: 1px 1px 2px #F83166,
+  -1px -1px 2px #F83166;
+
+  --box-shadow-2:1px 1px 2px #F83166,
+  -1px -1px 2px #F83166;
+
+} */
+
+
+/* //THEME 11 */
+/* :root{
+  --icons-color: #F83166;
+  --icons-light-color: #F8316657;
+  --icons-bg-color: #F83166;
+  --shadow-dark-color: #2e2c2d;
+  --bg-shadow-dark-color: #2e2c2d;
+  --shadow-light-color: #1E1E1E;
+  --main-bg-color: #1E1E1E;
+
+  --box-shadow: 1px 1px 2px #8f2c2c,
+  -1px -1px 2px #c13c3c;
+
+  --box-shadow-2:1px 1px 2px #8f2c2c,
+  -1px -1px 2px #c13c3c;
+} */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  background-color: var(--main-bg-color);
+  color: var(--icons-color);
+}
+
+input{
+  color: var(--icons-color);
+}
+
+/* input::placeholder{
+  color: var(--icons-color);
+} */
+
+textarea{
+  color: var(--icons-color);
+}
+
+textarea::placeholder{
+  color: var(--icons-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: none;
+}
+
+::selection{
+  color: var(--shadow-dark-color);
+  background: var(--icons-color);
+}
+
+::-webkit-scrollbar{
+  width: 1rem;
+  border: 1px solid var(--main-bg-color);
+}
+
+::-webkit-scrollbar-track{
+  border-radius: 0;
+  background-color: var(--main-bg-color);
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 2rem;
+  background:  var(--icons-color);
+  width: .5rem;
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}

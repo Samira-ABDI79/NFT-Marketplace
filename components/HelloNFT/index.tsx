@@ -1,5 +1,5 @@
 
-import Button from "../Button"
+import Button from "../ButtonSamira"
 const TextNumber=[
     {
     text:"Days",

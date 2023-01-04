@@ -1,4 +1,4 @@
-import Slider from "../Slider/Slider"
+import Slider from "../Slider/SamiraSlider"
 
 function ExploreVideo(){
     return(
